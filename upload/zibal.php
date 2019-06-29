@@ -29,7 +29,7 @@ function postToZibal($path, $parameters)
 						'callbackUrl' 	=> $_POST['zibal_callback_url']
 						)
 					);
-					var_dump($res);
+
 	if($res->result == 100 ){
 		Header('Location: https://gateway.zibal.ir/start/' . $res->trackId.'/direct');
 	} else {
